@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 375px) {
     .item-1 {
-        height: 200px;
+        min-height: 200px;
     }
     .item-2,
     .item-3 {
