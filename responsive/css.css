@@ -11,6 +11,7 @@
 .header {
     background-color: darkcyan;
     min-height: 150px;
+    padding: 5px 5px 0 5px;
 }
 
 .content {
@@ -19,17 +20,12 @@
     padding: 3% 2%;
 }
 
-/*.item {
-    background-color: darkblue;
-}*/
-
 .item-1 {
     width: 65%;
     min-height: 260px;
 }
 img{
   width: 100%;
-
   height: auto;
 }
 .parent-item {
@@ -50,15 +46,14 @@ img{
 }
 
 .block {
-  /*  background-color: navajowhite;*/
     width: 30%;
     min-height: 200px;
-  /*  margin-bottom: 3%;*/
 }
 
 .footer {
     min-height: 150px;
     background-color: #ccc;
+    padding: 5px 5px 0 5px;
 }
 
 @media screen and (max-width: 750px) {
