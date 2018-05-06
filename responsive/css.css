@@ -11,7 +11,8 @@
 .header {
     background-color: darkcyan;
     min-height: 150px;
-    padding: 5px 5px 0 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
 .logo {
@@ -24,11 +25,11 @@ ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 li {
     height: 60px;
-    width: 20%;
 }
 
 li img {
@@ -39,25 +40,21 @@ li img {
 .logo1 {
     height: 100px;
     margin-top: -15px;
-    margin-left: 25px;
 }
 
 .logo2 {
     height: 48px;
     margin-top: 12px;
-    margin-left: 33px;
 }
 
 .logo3 {
     height: 63px;
-    margin-left: 62px;
     margin-top: 5px;
 }
 
 .logo4 {
     height: 107px;
     margin-top: -16px;
-    margin-left: 40px;
 }
 
 .content {
@@ -101,7 +98,8 @@ img {
 .footer {
     min-height: 150px;
     background-color: #ccc;
-    padding: 5px 5px 0 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
 @media screen and (max-width: 750px) {
@@ -119,12 +117,13 @@ img {
     }
 
     .logo2 {
-        margin-left: 70px;
+        margin-top: -20px;
+    }
+    .logo3 {
+        margin-top: 15px;
     }
 
-    .logo3 {
-        margin-left: 96px;
-    }
+
     .content-item {
         flex-direction: column;
     }
