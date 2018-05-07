@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #c7b39b url(img/71.jpg) no-repeat fixed center center / contain;
+    background: #c7b39b url(img/71.jpg) no-repeat fixed center center / cover;
 }
 
 .container {
