@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Варианты
+        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="variants">
+                            <a class="dropdown-item" href="shop.html">Купить готовый</a>
+                            <a class="dropdown-item" href="#">Заказать свой</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbutton">Поиск</button>
+                </form>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container" id="con">
+        <div class="row" id="con_row">
+            <div class="col-md-8" id="con_row_left">
+                <div class="row">
+                    <div class="col-md-8" id="our_adress">
+                        <h3>Наш адрес</h3>
+                    </div>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.008886952794!2d44.521179002141345!3d48.70710327151361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411acb3364404aff%3A0x6090608048241826!2z0JTQuNCw0LzQsNC90YIg0J3QsCDQmtC-0LzRgdC-0LzQvtC70YzRgdC60L7QuSwg0KLQvtGA0LPQvtCy0L4t0LTQtdC70L7QstC-0Lkg0KbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1526374676695" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <div class="row">
+                    <div class="col-md-8" id="our_adress">
+                        Режим работы: Пн-Пт 9:00-17:00 <br> Телефон:+7987-654-32-21
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="con_row_right">
+                <form>
+                    <div class="form-group">
+                        <label>Закажите лучший торт сейчас!</label>
+                        <input type="text" class="form-control" placeholder="First name">
+
+                    </div>
+                    <div class="form-group">
+                        <label>Нормер телефона</label>
+                        <input type="text" class="form-control" placeholder="+7 123 456 78 89">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Опишите торт вашей мечты</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Я хочу что бы..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Заказать</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-12" id="best_work">
+            <h4>Наши лучшие работы</h4>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3 ">
+                <a href="#"> <img src="img/2.jpg" alt="tort"></a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href="#"> <img src="img/3.jpg" alt="tort"></a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href=""> <img src="img/4.jpg" alt="tort"></a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href=""><img src="img/5.jpg" alt="tort"></a>
+            </div>
+        </div>
+        <div class="col-md-12" id="copy">&copy;Aleksanchezzz2018.</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+    background-image: url(img/1.jpg);
+    font-family: 'Kavivanar'!important;
+}
+
+#nav {
+    background-color: #decc96!important;
+    margin-bottom: 20px;
+}
+
+#nav a:hover {
+    color: #b7a160!important;
+}
+
+#nav button:hover {
+    background: #decc96!important;
+}
+
+#nav button:active {
+    border-color: black!important;
+}
+
+#nav button {
+    background: #b7a160!important;
+}
+
+#navbutton {
+    color: black!important;
+    border-color: #decc96!important;
+}
+
+#variants a:active{
+    background-color: bisque;
+}
+#con_row_right {
+    box-shadow: inset 0px 0px 2px 0px black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#con {
+    background: #decc96;
+    padding-top: 30px;
+}
+
+#submit {
+    color: black!important;
+    background-color: #b7a160!important;
+    border-color: #decc96!important;
+}
+
+#submit:hover {
+    background-color: #decc96!important;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: baseline!important;
+}
+
+#best_work {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#copy{
+    text-align: center;
+}
+#our_adress{
+    text-align: center;
+    padding: 15px;
+}
