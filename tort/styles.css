@@ -42,6 +42,9 @@ body {
     background: #decc96;
     padding-top: 30px;
 }
+#con_custom{
+    background: #decc96;
+}
 
 #submit {
     color: black!important;
