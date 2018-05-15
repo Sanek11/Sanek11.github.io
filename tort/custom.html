@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contacts</title>
+    <title>Custom</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -53,23 +53,9 @@
 
     <div class="container" id="con">
         <div class="row" id="con_row">
-            <div class="col-md-8" id="con_row_left">
-                <div class="row">
-                    <div class="col-md-8" id="our_adress">
-                        <h3>Наш адрес</h3>
-                    </div>
-                </div>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.008886952794!2d44.521179002141345!3d48.70710327151361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411acb3364404aff%3A0x6090608048241826!2z0JTQuNCw0LzQsNC90YIg0J3QsCDQmtC-0LzRgdC-0LzQvtC70YzRgdC60L7QuSwg0KLQvtGA0LPQvtCy0L4t0LTQtdC70L7QstC-0Lkg0KbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1526374676695" width="640" height="450"  style="border:0" allowfullscreen id="iframe1"></iframe>
 
-                <div class="row">
-                    <div class="col-md-8" id="our_adres">
-                        Режим работы: Пн-Пт 9:00-17:00 <br> Телефон:+7987-654-32-21
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4" id="con_row_right">
+            <div class="col-md-12" id="con_row_right">
                 <form>
                     <div class="form-group">
                         <label>Закажите лучший торт сейчас!</label>
@@ -79,6 +65,16 @@
                     <div class="form-group">
                         <label>Нормер телефона</label>
                         <input type="text" class="form-control" placeholder="+7 123 456 78 89">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">По какому поводу торт</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+      <option>День рождения</option>
+      <option>Юбилей</option>
+      <option>Свадьба</option>
+      <option>Рождение</option>
+      <option>Другое</option>
+    </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Опишите торт вашей мечты</label>
