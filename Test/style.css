@@ -1,0 +1,495 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-4,
+.col-6,
+.col-12,
+.col-md-6,
+.col-md-4 {
+    padding: 0 5px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1190px !important;
+    }
+}
+
+.container {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.header {
+    background: url(img/template.png) 0 0 no-repeat;
+    background-size: cover;
+    margin-bottom: 75px;
+}
+
+.container-row {
+    margin: 0 200px;
+    padding: 0 5px;
+}
+
+.header-left-block {
+    /* padding-left: 230px;*/
+    padding-left: 14%;
+    padding-top: 32px;
+    color: #fff;
+    float: left;
+}
+
+.header-right-block {
+    /* padding-left: 205px;*/
+    padding-left: 12%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: arial;
+    border-bottom: 5px solid;
+    width: max-content;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 14px;
+    color: #4488bb;
+}
+
+.header-text {
+    max-width: 500px;
+}
+
+.new-color {
+    color: #aaa;
+}
+
+.novalidate-check .new-color {
+    color: #bb4444 !important;
+}
+
+#form {
+    max-width: 290px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.form-element {
+    margin-bottom: 15px;
+}
+
+input {
+    padding-left: 10px;
+}
+
+.valid_select,
+.valid_email,
+.valid_name {
+    height: 50px;
+    width: 250px;
+    border-radius: 3px;
+    background: #eee;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.novalidate {
+    border: 1px solid #bb4444 !important;
+}
+
+.valid_string:focus {
+    border: 1px solid #4488bb;
+    border-radius: 3px;
+}
+
+.form-close,
+.form-close2{
+    background: url(img/close-blue.png) 0 0 no-repeat;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    width: 20px;
+}
+
+.valid_email .novalidate + .error-email,
+.valid_name .novalidate + .error-email {
+    display: block !important;
+    position: absolute;
+    min-width: 168px;
+    display: none;
+    position: absolute;
+    background: #bb4444;
+    border: 1px solid #b5b0b0;
+    list-style: none;
+    z-index: 1;
+    top: 59px;
+    right: 35px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    z-index: 120;
+    color: #fff;
+}
+
+.valid_email .novalidate + .error-email::before,
+.valid_name .novalidate + .error-email::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #bb4444;
+}
+
+.email-change-shown,
+.email-change-shown1 {
+    display: block !important;
+    position: absolute;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 120;
+    color: #bb4444;
+    font-size: 10px;
+}
+
+.valid_email .validate .email-change-shown {
+    color: blue !important;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.first-row {
+    margin-bottom: 22px !important;
+    overflow: hidden;
+}
+
+.second-row {
+    margin-bottom: 75px;
+    overflow: hidden;
+}
+
+.first-row img,
+.second-row img {
+    min-height: 150px;
+}
+
+.third-block {
+    background: #eee;
+}
+
+.third-block-left {
+    float: left;
+    max-height: 480px;
+}
+
+.third-block-right {
+    padding-bottom: 85px;
+}
+
+.third-block-left-img {
+    max-height: 480px;
+    width: auto;
+    margin-top: -35px;
+    padding-left: 20px;
+}
+
+h2 {
+    padding-top: 55px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #4488bb;
+    margin-bottom: 40px;
+    padding-left: 50px;
+}
+
+.list-img {
+    max-width: 30px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.list-text {
+    border-bottom: 1px dashed #aeaeae;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-text {
+    margin-top: -10px;
+    color: #4488bb;
+}
+
+.third-block-right a:last-child .title-text .list-text {
+    border: 0 !important;
+}
+
+.last-div {
+    border-left: 5px solid #4488bb;
+    padding-left: 20px;
+    color: #4488bb;
+    margin: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.secret {
+    bottom: -110px;
+    position: absolute;
+    height: 100% !important;
+    display: block !important;
+    background: rgba(68, 136, 187, .5);
+    z-index: 40;
+    width: 100%;
+    -webkit-transition: bottom 0.5s ease-out;
+    transition: bottom 0.5s ease-out;
+    padding-left: 30px;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card:hover .secret {
+    bottom: 0 !important;
+    padding-left: 30px;
+    height: 100% !important;
+}
+
+.secret-img {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.secret-img img {
+    min-height: 17px !important;
+}
+
+.secret-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.secret-text {
+    color: #fff;
+    font-size: 14px;
+}
+
+.fancybox-content {
+    border-radius: 3px !important;
+    padding-left: 15px !important;
+    padding-top: 25px !important;
+    padding-bottom: 20px !important;
+    padding-right: 20px !important;
+}
+
+.fancybox-content .fancy-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.fancy-text {
+    margin-bottom: 35px;
+}
+
+.cancel-btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: #aaa;
+}
+
+.accept-btn {
+    background: url(img/btn-background.png) 0 0;
+    background-size: contain;
+    padding: 8px 38px;
+}
+
+.cancel-btn:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #aaa !important;
+}
+
+.cancel-btn:active {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #aaa !important;
+    box-shadow: none !important;
+}
+
+.cancel-btn:focus {
+    background-color: transparent;
+    border-color: transparent;
+    color: #aaa;
+    box-shadow: o !important;
+}
+
+.title-text:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.fancybox-button svg {
+    display: none !important;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    padding: 25px !important;
+}
+
+.form-submit {
+    background: url(img/btn-background.png) 0 0;
+    background-size: contain;
+    padding: 10px 38px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.form-hyperlink {
+    color: #aaa;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+@media(max-width: 1199px) {
+    .third-block-left-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 992px) {
+    .third-block-left {
+        display: none !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .row {
+        margin: 0;
+    }
+
+    .header-left-block {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    #form {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .header-text {
+        max-width: 100% !important;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    .header-right-block {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+    img {
+
+        margin-bottom: 20px;
+    }
+
+    .first-row {
+        margin-bottom: 0px !important;
+    }
+
+    .second-row {
+        margin-bottom: 20px !important;
+    }
+
+    .list-img {
+        float: left;
+        margin-bottom: 65px !important;
+    }
+
+    .list-text {
+        display: flex;
+    }
+
+    .title-text::before {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .first-row img,
+    .second-row img {
+        min-height: 170px;
+    }
+
+    .third-block {
+        margin-top: -125px;
+        padding-top: 110px;
+    }
+
+    .third-block-right {
+        margin-bottom: -35px;
+        padding-bottom: 0;
+    }
+
+    .last-div-2 {
+        margin: 20px 0;
+    }
+
+    .card {
+        height: 172px !important;
+        margin-bottom: 20px;
+    }
+
+    .secret {
+        bottom: 0px;
+    }
+
+    .secret {
+        transition: none !important;
+    }
+}

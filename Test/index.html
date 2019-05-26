@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="col-12 col-md-6 header-left-block">
+                <h1>Banner header</h1>
+                <div class="header-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis, a nobis, incidunt dicta eos provident perspiciatis aperiam quasi corporis officiis. In sapiente mollitia ab amet</div>
+            </div>
+            <div class="col-12 col-md-6 header-right-block">
+
+                <form action="" id="form">
+                    <input type="hidden" name="description" value="form-description">
+
+                    <h3>Request form</h3>
+
+                    <div class="form-element valid_email">
+                        <input class="valid_string valid_email" type="text" name="email" placeholder="Enter your E-mail">
+                        
+                        <div class="error-email" style="display: none;">Enter correct E-mail</div>
+                        <div class="email-change" style="display: none;">Enter your E-mail</div>
+                        <div class="form-close"></div>
+                    </div>
+
+                    <div class="form-element valid_name">
+                        <input class="valid_string valid_name" type="text" name="name" id="userphone" placeholder="Enter your Name">
+                        
+                        <div class="error-email1" style="display: none;">Enter Name</div>
+                        <div class="email-change1" style="display: none;">Enter Name</div>
+                        <div class="form-close2"></div>
+                    </div>
+
+                    <div class="form-element valid">
+                        <select class="valid_select new-color">
+                            <option value="" default="" selected="">Select your country</option>
+                            <option>Russia</option>
+                            <option>USA</option>
+                            <option>Netherlands</option>
+                        </select>
+                    </div>
+
+                    <div class="form-element" style="margin: 0; white-space: nowrap;">
+                        <span class="checkbox">
+                            <span class="check"></span>
+                            <input type="checkbox" class="valid_check" id="checkbox-legal" name="checkbox-legal" value="" checked="">
+                            <label for="checkbox-legal">
+                                <span class="new-color">&nbsp;I agree with Terms & Conditions
+                                </span>
+                            </label>
+                        </span>
+                    </div>
+
+                    <input type="submit" value="Submit" class="form-submit">
+                    <span class="form-hyperlink">Hyperlink</span>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row first-row">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="img/card1.png" alt="card1">
+                    <div class="secret">
+                        <div class="secret-title">Post header 1</div>
+                        <div class="secret-img">
+                            <img src="img/card-overlay.png" alt="card-overlay">
+                        </div>
+                        <div class="secret-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="img/card2.png" alt="card2">
+                    <div class="secret">
+                        <div class="secret-title">Post header 2</div>
+                        <div class="secret-img">
+                            <img src="img/card-overlay.png" alt="card-overlay">
+                        </div>
+                        <div class="secret-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="img/card3.png" alt="card3">
+                    <div class="secret">
+                        <div class="secret-title">Post header 3</div>
+                        <div class="secret-img">
+                            <img src="img/card-overlay.png" alt="card-overlay">
+                        </div>
+                        <div class="secret-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row second-row">
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <img src="img/card4.png" alt="card4">
+                    <div class="secret">
+                        <div class="secret-title">Post header 4</div>
+                        <div class="secret-img">
+                            <img src="img/card-overlay.png" alt="card-overlay">
+                        </div>
+                        <div class="secret-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <img src="img/card5.png" alt="card5">
+                    <div class="secret">
+                        <div class="secret-title">Post header 5</div>
+                        <div class="secret-img">
+                            <img src="img/card-overlay.png" alt="card-overlay">
+                        </div>
+                        <div class="secret-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third-block">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4 col-xl-6 third-block-left">
+                    <img src="img/promo1.png" alt="promo" class="third-block-left-img">
+                </div>
+                <div class="col-lg-8 col-xl-6 third-block-right">
+                    <h2>Title text</h2>
+
+                    <a data-fancybox="hello1" data-src="#hello" href="javascript:;" class="">
+                        <div class="title-text-1 title-text">
+                            <img src="img/list1.png" alt="list1" class="list-img">
+                            <span class="list-text">Duis aute irure dolor in reprehenderit1 in voluptate velit</span>
+                        </div>
+                    </a>
+
+                    <a data-fancybox="hello2" data-src="#hello" href="javascript:;" class="">
+                        <div class="title-text-2 title-text">
+                            <img src="img/list2.png" alt="list2" class="list-img">
+                            <span class="list-text">Ullamco laboris nisi ut aliquip ex ea commodo consequat</span>
+                        </div>
+                    </a>
+
+                    <a data-fancybox="hello3" data-src="#hello" href="javascript:;" class="">
+                        <div class="title-text-3 title-text">
+                            <img src="img/list3.png" alt="list3" class="list-img">
+                            <span class="list-text">Ut enim ad minim veniam, quis nostrud exercitation</span>
+                        </div>
+                    </a>
+
+                    <a data-fancybox="hello4" data-src="#hello" href="javascript:;" class="">
+                        <div class="title-text-4 title-text">
+                            <img src="img/list4.png" alt="list4" class="list-img">
+                            <span class="list-text">Et dolore magna aliqua</span>
+                        </div>
+                    </a>
+
+                    <a data-fancybox="hello5" data-src="#hello" href="javascript:;" class="">
+                        <div class="title-text-5 title-text">
+                            <img src="img/list5.png" alt="list5" class="list-img">
+                            <span class="list-text">Sed do eiusmod tempor2 incididunt ut labore</span>
+                        </div>
+                    </a>
+
+                    <a data-fancybox="hello6" data-src="#hello" href="javascript:;" class="">
+                        <div class="title-text-6 title-text">
+                            <img src="img/list6.png" alt="list6" class="list-img">
+                            <span class="list-text">Lorem ipsum dolor sit amet3 consectetur adipisicing elit</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="last-div">
+                        <div class="last-div-1">1 Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</div>
+                        <div class="last-div-2">2 Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        <div class="last-div-3">3 Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="hello" action="" method="post" style="display: none; width: 100%; max-width: 590px;" class="fancybox-content">
+        <div class="fancy-title">
+            External link
+        </div>
+        <div class="fancy-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+        </div>
+
+
+        <p class="mb-0 text-right">
+            <input data-fancybox-close="" type="button" class="btn btn-primary cancel-btn" value="Cancel">
+            <input data-fancybox-close="" type="button" class="btn btn-primary accept-btn" value="Accept">
+        </p>
+        <button type="button" data-fancybox-close="" class="fancybox-close fancybox-close-small" title="Close" style="background: url(img/modal-close.png) 0 20px no-repeat">
+            
+        </button>
+    </form>
+</body>
+
+</html>
