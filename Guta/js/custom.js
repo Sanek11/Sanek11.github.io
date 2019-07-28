@@ -1,5 +1,4 @@
 (function ($) {
-
     jQuery(document).ready(function ($) {
         $('.menu-item' || '.hide-menu').hover(
             function () {
@@ -9,7 +8,6 @@
                 $('.hr').removeClass('menu-hover-hr-visible')
             }
         );
-
         $(".hamburger").click(function () {
             if (!$('.mobile-menu').hasClass('clicked')) {
                 $('.mobile-menu').addClass('clicked');
@@ -17,7 +15,6 @@
                 $('.mobile-menu').removeClass('clicked');
             }
         });
-
         var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30,
             centeredSlides: true,
@@ -34,7 +31,6 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-
         $(".news-see-more").click(function () {
             if (!$('.news-img-hidden').hasClass('news-img-visible')) {
                 $('.news-img-hidden').addClass('news-img-visible');
@@ -42,56 +38,38 @@
                 $('.news-img-hidden').removeClass('news-img-visible');
             }
         });
-
-
         $('.news-see-more').click(function () {
             $(this).text($(this).text() == "СКРЫТЬ" ? "ПОКАЗАТЬ ЕЩЕ" : "СКРЫТЬ");
         });
-
-
-
-        jQuery(document).ready(function ($) {
-            $("#form").submit(function () {
-                var par = $(this);
-                if (!validateForm(par)) {
-                    return false;
-                }
-                var form_data = $(this).serialize();
-                $(".subscribe-success").addTemporaryClass("subscribe-visible", 3000);
-                $.ajax({
-                    type: "POST",
-                    url: "send.php",
-                    data: form_data,
-                    success: function () {
-
-                    }
-                });
+        $("#form").submit(function () {
+            var par = $(this);
+            if (!validateForm(par)) {
                 return false;
+            }
+            var form_data = $(this).serialize();
+            $(".subscribe-success").addTemporaryClass("subscribe-visible", 3000);
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: form_data,
+                success: function () {}
             });
-
+            return false;
         });
-
-        jQuery(document).ready(function ($) {
-            $("#footer-form").submit(function () {
-                var par = $(this);
-                if (!validateForm(par)) {
-                    return false;
-                }
-                var form_data = $(this).serialize();
-
-                $.ajax({
-                    type: "POST",
-                    url: "send.php",
-                    data: form_data,
-                    success: function () {
-
-                    }
-                });
+        $("#footer-form").submit(function () {
+            var par = $(this);
+            if (!validateForm(par)) {
                 return false;
+            }
+            var form_data = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: form_data,
+                success: function () {}
             });
-
+            return false;
         });
-
 
         function validateForm(par) {
             var isValidate = true;
@@ -109,7 +87,6 @@
                     }
                 }
             });
-
             par.find(".valid_string.valid_email").each(function () {
                 if ($(this).val().length > 0) {
                     var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
@@ -132,14 +109,9 @@
                     }
                 }
             });
-
-
             return isValidate;
         }
-
-
         $.fn.extend({
-
             addTemporaryClass: function (className, duration) {
                 var elements = this;
                 setTimeout(function () {
@@ -151,10 +123,5 @@
                 });
             }
         });
-
-
-
     });
-
-
 })(jQuery);
