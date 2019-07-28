@@ -527,10 +527,15 @@ a {
         .subscribe #form .subscribe-name-email .form-element.valid_name {
           margin-right: 0;
           margin-bottom: 21px; } }
+    @media (max-width: 767px) {
+      .subscribe #form .subscribe-name-email .form-element.valid_email .subscribe-error {
+        top: -16px;
+        right: 0; } }
     @media (max-width: 610px) {
       .subscribe #form .subscribe-name-email .form-element.valid_email .subscribe-error {
         top: 48px;
-        left: 17px; } }
+        left: 17px;
+        text-align: left; } }
     @media (max-width: 610px) {
       .subscribe #form .subscribe-name-email .form-element.valid_email .subscribe-email-placeholder {
         top: 46px;
@@ -596,7 +601,7 @@ a {
       .subscribe #form .subscribe-textarea-placeholder,
       .subscribe #form .subscribe-error {
         right: inherit;
-        left: 22px; } }
+        left: 21px; } }
     @media (max-width: 610px) {
       .subscribe #form .subscribe-textarea-placeholder,
       .subscribe #form .subscribe-error {

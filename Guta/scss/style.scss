@@ -83,7 +83,7 @@ a {
                 font-size: 20px;
             }
             .main-menu {
-                padding-top: 4px; 
+                padding-top: 4px;
                 font-size: 16px;
                 line-height: 19px;
                 display: flex;
@@ -102,7 +102,7 @@ a {
                 line-height: 15px;
                 font-weight: 600;
                 display: flex;
-                padding-top: 6px; 
+                padding-top: 6px;
                 @media (max-width: 767px) {
                     display: none;
                 }
@@ -147,12 +147,12 @@ a {
                         margin-bottom: 10px;
                     }
                 }
-                .work-rules{
+                .work-rules {
                     margin-top: 40px;
                     font-size: 14px;
                     line-height: 18px;
                     text-align: center;
-                    .work{
+                    .work {
                         margin-bottom: 10px;
                     }
                 }
@@ -429,8 +429,8 @@ a {
                     margin-left: 11px;
                     background-size: cover;
                     display: inline-block;
-                    @media(max-width: 767px){
-                       padding-right: 1px; 
+                    @media(max-width: 767px) {
+                        padding-right: 1px;
                     }
                     @media(max-width: 520px) {
                         margin-left: 8px;
@@ -606,9 +606,14 @@ a {
             }
             .form-element.valid_email {
                 .subscribe-error {
+                    @media(max-width: 767px) {
+                        top: -16px; 
+                        right: 0;
+                    }
                     @media(max-width: 610px) {
                         top: 48px;
                         left: 17px;
+                        text-align: left; 
                     }
                 }
                 .subscribe-email-placeholder {
@@ -685,7 +690,7 @@ a {
             height: 18px;
             @media(max-width: 767px) {
                 right: inherit;
-                left: 22px;
+                left: 21px;  
             }
             @media(max-width: 610px) {
                 top: 15px;
